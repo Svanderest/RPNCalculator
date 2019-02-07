@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body onload="initialize()" onkeydown="keyPress(event)"  onkeyup="keyRelease()">
+		<form id="form">
+			<div id="screen">
+				<input type="text" name="stack" id="stack1" readonly>
+				<input type="text" name="stack" id="stack2" readonly>
+			</div>
+			<div id="functions">
+				<div>
+					<input type="button" id="sin" value="sin" onclick="btnSin()">
+					<input type="button" id="cos" value="cos" onclick="btnCos()">
+					<input type="button" id="tan" value="tan" onclick="btnTan()">
+					<input type="button" id="sqrt" value="sqrt" onclick="btnSqrt()">
+				</div>
+				<div>
+					<input type="button" id="exp" value="^" onclick="btnExp()">
+					<input type="button" id="log" value="log" onclick="btnLog()">
+					<input type="button" id="e" value="e" onclick="btnE()">
+					<input type="button" id="pi" value="&pi;" onclick="btnPi()">
+				</div>
+				</div>
+			<div id="enterrow">
+				<input type="button" id="enter" value="&#8629;" onclick="btnEnter()">
+				<input type="button" id="sign" value="+/-" onclick="btnSign()">
+				<input type="button" id="flip" value="&#8596;" onclick="btnFlip()">
+			</div>
+			<div>
+				<input type="button" class="number" id="7" value="7" onclick="btnNumber(7)">
+				<input type="button" class="number" id="8" value="8" onclick="btnNumber(8)">
+				<input type="button" class="number" id="9" value="9" onclick="btnNumber(9)">
+				<input type="button" id="divide" value="/" onclick="btnDivide()">			
+			</div>
+			<div>
+				<input type="button" class="number" id="4" value="4" onclick="btnNumber(4)">
+				<input type="button" class="number" id="5" value="5" onclick="btnNumber(5)">
+				<input type="button" class="number" id="6" value="6" onclick="btnNumber(6)">
+				<input type="button" id="multiply" value="X" onclick="btnMult()">
+			</div>					
+			<div>
+				<input type="button" class="number" id="1" value="1" onclick="btnNumber(1)">
+				<input type="button" class="number" id="2" value="2" onclick="btnNumber(2)">
+				<input type="button" class="number" id="3" value="3" onclick="btnNumber(3)">
+				<input type="button" id="subtract" value="-" onclick="btnSubt()">
+			</div>
+			<div>
+				<input type="button" class="number" id="C" value="C" onclick="btnReset()">			
+				<input type="button" class="number" value="0" id="0" onclick="btnNumber(0)">				
+				<input type="button" class="number" value="." id="dot" onclick="btnNumber(".")">
+				<input type="button" id="add" value="+" onclick="btnPlus()">
+			</div>
+			<div>
+				<input type="number" name="newName" id="test">
+			</div>	
+		</form>
+	</body>
+</html>
